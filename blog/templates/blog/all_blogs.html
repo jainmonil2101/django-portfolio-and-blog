@@ -5,10 +5,10 @@
 {% block content %}
 
 {% if blog_count > 5 %}
-<h1 id="blogtitle" class="text-center font-weight-bold mb-3">Blog</h1>
+<h1 id="blogtitle" class="text-center fw-bold mb-3">Blog</h1>
 <h3 class="text-center mb-5">Monil has written {{ blog_count }} blog{{ blog_count|pluralize }}</h3>
 {% else %}
-<h1 id="blogtitle" class="text-center font-weight-bold mb-5">Blog</h1>
+<h1 id="blogtitle" class="text-center fw-bold mb-5">Blog</h1>
 {% endif %}
 {% for blog in blogs %}
 
